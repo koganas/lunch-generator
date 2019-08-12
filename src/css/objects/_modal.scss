@@ -1,0 +1,80 @@
+.modal {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity $time $cubic;
+	padding-top: calc( #{$topHeight} + 40px );
+	background-color: $greyIce;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+
+	&--open {
+		visibility: visible;
+		opacity: 1;
+
+		&.col-4 {
+			visibility: visible;
+		}
+	}
+	
+	&__container {
+		position: fixed;
+		width: inherit;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		width: inherit;
+		padding: 0 5rem;
+		height: 100%;
+		overflow-y: auto;
+
+		h1 {
+			font-size: 2.4rem;
+			margin: 1rem 0;
+		}
+		p {
+			font-size: 1.6rem;
+			font-weight: 300;
+			margin: 2rem 0;
+		}
+		ul {
+			font-size: 1.2rem;
+		    justify-content: space-evenly;
+			display: flex;
+			flex-flow: wrap;
+			li {
+				border: 1px solid $green;
+				border-radius: 5px;
+				padding: 5px;
+				margin: 2rem 1rem auto;
+				cursor: default;
+				&:hover {
+					background-color: $green;
+				}
+			}
+		}
+
+		@media(max-width: #{$md}) {
+			position: relative;	    
+		}
+
+	}
+
+	&__close {
+		position: fixed;
+		top: 12rem;
+		right: 5rem;
+		cursor: pointer;
+		font-size: 3rem;
+		color: $greenDark;
+		&:hover {
+			color: $green;
+		}
+
+		@media(max-width: #{$xlg}) {
+			right: 2.5rem;
+		}
+		@media(max-width: #{$md}) {
+			right: 1rem;
+		}
+	}
+
+}

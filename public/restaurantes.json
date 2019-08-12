@@ -1,0 +1,74 @@
+[
+	{
+		"restaurante": "Libanês",
+		"preco": "20-30"
+	},
+	{
+		"restaurante": "Ponto Setti",
+		"preco": "20-30"
+	},
+	{
+		"restaurante": "Ponto Gira",
+		"preco": "25-35"
+	},
+	{
+		"restaurante": "Recanto Gaúcho",
+		"preco": "50-60"
+	},
+	{
+		"restaurante": "Madero",
+		"preco": "40-50"
+	},
+	{
+		"restaurante": "Mineiro",
+		"preco": "25-35"
+	},
+	{
+		"restaurante": "The Black Beef Burgers",
+		"preco": "30-40"
+	},
+	{
+		"restaurante": "Mineiro",
+		"preco": "25-35"
+	},
+	{
+		"restaurante": "Mambembe - Mueller",
+		"preco": "25-35"
+	},
+	{
+		"restaurante": "Missal Shawarma",
+		"preco": "15-25"
+	},
+	{
+		"restaurante": "Coco Bambu",
+		"preco": "50-60"
+	},
+	{
+		"restaurante": "Le Magu - Vila Urbana",
+		"preco": "25-35"
+	},
+	{
+		"restaurante": "Arrumadinho",
+		"preco": "25-35"
+	},
+	{
+		"restaurante": "Maneki Lamen",
+		"preco": "35-45"
+	},
+	{
+		"restaurante": "Origami",
+		"preco": "20-30"
+	},
+	{
+		"restaurante": "Nonna Giovanna",
+		"preco": "30-40"
+	},
+	{
+		"restaurante": "Paradoja - Vila Urbana",
+		"preco": "20-30"
+	},
+	{
+		"restaurante": "Matuto - Vila Urbana",
+		"preco": "25-35"
+	}
+]

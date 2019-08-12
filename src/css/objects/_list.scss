@@ -1,0 +1,46 @@
+.list {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    padding-top: calc( #{$topHeight} + 40px );
+    transition: width $time $cubic;
+    justify-content: center;
+
+    &__item {
+        list-style: none;
+        margin: 0 1rem 3rem;
+        overflow: hidden;
+        width: 200px;
+        cursor: pointer;
+        img {
+            margin: auto;
+        }
+        &:hover {
+            .list__title {
+                color: $greenDark;
+            }
+        }
+        @media(max-width: #{$sm}) {
+            width: 140px;
+        }
+
+        &--active {
+            border: 1px solid $green;
+            background-color: $greyIce;
+        }
+    }
+
+    &__title {
+        color: $black;
+        margin-top: 1rem;
+        font-size: 1.6rem;
+    }
+
+    @media(max-width: #{$md}) {
+        display: none;
+        &:only-child {
+            display: flex;
+        }
+    }
+
+}

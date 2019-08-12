@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	font-family: $rubik;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+code {
+	font-family: $rubik;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $rubik;
+}
+p, li, small{
+	font-family: $rubik;
+	font-weight: 400;
+}
+p {
+	font-size: 1.6rem;
+}

@@ -1,0 +1,24 @@
+.header {
+	position: fixed;
+	width: 100%;
+	height: $topHeight;
+	background-color: $blueDark;
+	z-index: 1;
+	box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9rem;
+
+    &__logo {
+    	max-height: 40px;
+    }
+
+    @media(max-width: #{$md}) {
+        //flex-flow: column;
+        padding: 0 1rem;
+        &__logo {
+            max-height: 30px;
+        }
+    }
+}
