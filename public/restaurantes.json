@@ -50,7 +50,7 @@
 	{
 		"restaurante": "Mambembe - Mueller",
 		"preco": "25-35",
-		"nota": "5",
+		"nota": "4",
 		"tipo": [ "PF", "Executivo" ]
 	},
 	{
@@ -68,7 +68,7 @@
 	{
 		"restaurante": "Missal Shawarma",
 		"preco": "15-25",
-		"nota": "5",
+		"nota": "4",
 		"tipo": [ "Shawarma", "Fast food" ]
 	},
 	{
@@ -80,7 +80,7 @@
 	{
 		"restaurante": "Le Magu - Vila Urbana",
 		"preco": "25-35",
-		"nota": "3",
+		"nota": "4",
 		"tipo": [ "PF", "Executivo", "Porções" ]
 	},
 	{
@@ -92,7 +92,7 @@
 	{
 		"restaurante": "Maneki Lamen",
 		"preco": "35-45",
-		"nota": "4",
+		"nota": "5",
 		"tipo": [ "Lamen", "Oriental", "Porções" ]
 	},
 	{
