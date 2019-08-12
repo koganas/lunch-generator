@@ -1,0 +1,10 @@
+.button {
+    text-transform: uppercase;
+    border-radius: $borderRadius;
+    border: 1px solid $blackLight;
+    padding: 10px 30px;
+    font-weight: bold;;
+    &:hover {
+    	background-color: $green;
+    }
+}

@@ -1,74 +1,146 @@
 [
 	{
 		"restaurante": "Libanês",
-		"preco": "20-30"
+		"preco": "20-30",
+		"nota": "4",
+		"tipo": [ "PF", "Executivo" ]
 	},
 	{
 		"restaurante": "Ponto Setti",
-		"preco": "20-30"
+		"preco": "20-30",
+		"nota": "5",
+		"tipo": [ "Buffet", "Caseira" ]
 	},
 	{
 		"restaurante": "Ponto Gira",
-		"preco": "25-35"
+		"preco": "25-35",
+		"nota": "5",
+		"tipo": [ "Buffet", "Churrasco" ]
 	},
 	{
 		"restaurante": "Recanto Gaúcho",
-		"preco": "50-60"
+		"preco": "50-60",
+		"nota": "5",
+		"tipo": [ "Churrasco", "Buffet" ]
+	},
+	{
+		"restaurante": "Jardins Grill",
+		"preco": "70-80",
+		"nota": "5",
+		"tipo": [ "Churrasco", "Buffet" ]
 	},
 	{
 		"restaurante": "Madero",
-		"preco": "40-50"
+		"preco": "40-50",
+		"nota": "4",
+		"tipo": [ "Hamburger", "A la carte" ]
 	},
 	{
 		"restaurante": "Mineiro",
-		"preco": "25-35"
+		"preco": "25-35",
+		"nota": "4",
+		"tipo": [ "Buffet", "Caseiro" ]
 	},
 	{
 		"restaurante": "The Black Beef Burgers",
-		"preco": "30-40"
-	},
-	{
-		"restaurante": "Mineiro",
-		"preco": "25-35"
+		"preco": "30-40",
+		"nota": "5",
+		"tipo": [ "Hamburger", "Fast food" ]
 	},
 	{
 		"restaurante": "Mambembe - Mueller",
-		"preco": "25-35"
+		"preco": "25-35",
+		"nota": "5",
+		"tipo": [ "PF", "Executivo" ]
 	},
 	{
 		"restaurante": "Missal Shawarma",
-		"preco": "15-25"
+		"preco": "15-25",
+		"nota": "5",
+		"tipo": [ "Shawarma", "Fast food" ]
 	},
 	{
 		"restaurante": "Coco Bambu",
-		"preco": "50-60"
+		"preco": "50-60",
+		"nota": "5",
+		"tipo": [ "A la carte", "Frutos do mar" ]
 	},
 	{
 		"restaurante": "Le Magu - Vila Urbana",
-		"preco": "25-35"
+		"preco": "25-35",
+		"nota": "3",
+		"tipo": [ "PF", "Executivo", "Porções" ]
 	},
 	{
 		"restaurante": "Arrumadinho",
-		"preco": "25-35"
+		"preco": "25-35",
+		"nota": "4",
+		"tipo": [ "PF", "Executivo", "Porções" ]
 	},
 	{
 		"restaurante": "Maneki Lamen",
-		"preco": "35-45"
+		"preco": "35-45",
+		"nota": "4",
+		"tipo": [ "Lamen", "Oriental", "Porções" ]
 	},
 	{
 		"restaurante": "Origami",
-		"preco": "20-30"
+		"preco": "20-30",
+		"nota": "3",
+		"tipo": [ "Buffet", "Oriental" ]
+	},
+	{
+		"restaurante": "Maru",
+		"preco": "30-50",
+		"nota": "5",
+		"tipo": [ "Buffet", "Oriental" ]
 	},
 	{
 		"restaurante": "Nonna Giovanna",
-		"preco": "30-40"
+		"preco": "30-40",
+		"nota": "5",
+		"tipo": [ "Italiana", "A la carte" ]
+	},
+	{
+		"restaurante": "Restaurante São Francisco",
+		"preco": "30-40",
+		"nota": "4",
+		"tipo": [ "Carnes", "A la carte" ]
 	},
 	{
 		"restaurante": "Paradoja - Vila Urbana",
-		"preco": "20-30"
+		"preco": "20-30",
+		"nota": "4",
+		"tipo": [ "Hamburger", "Fast food" ]
 	},
 	{
 		"restaurante": "Matuto - Vila Urbana",
-		"preco": "25-35"
+		"preco": "25-35",
+		"nota": "5",
+		"tipo": [ "PF", "Executivo" ]
+	},
+	{
+		"restaurante": "Zapata - Vila Urbana",
+		"preco": "25-35",
+		"nota": "4",
+		"tipo": [ "Mexicana", "Fast food" ]
+	},
+	{
+		"restaurante": "Jeronimo - Estação",
+		"preco": "25-35",
+		"nota": "5",
+		"tipo": [ "Hamburger", "Fast food" ]
+	},
+	{
+		"restaurante": "Rock'n'Grill - Estação",
+		"preco": "20-30",
+		"nota": "3",
+		"tipo": [ "PF", "Executivo" ]
+	},
+	{
+		"restaurante": "Montana Grill - Estação",
+		"preco": "20-30",
+		"nota": "4",
+		"tipo": [ "PF", "Executivo" ]
 	}
 ]

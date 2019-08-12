@@ -4,9 +4,10 @@ import axios from 'axios';
 class Generator extends Component {
   constructor(props) {
     super(props);
-    this.genRestaurant();
     this.state = {
-      frase: '...'
+      frase: 'Onde almoçar?',
+      preco: '...',
+      nota: '...'
     };
   }
 
@@ -21,7 +22,8 @@ class Generator extends Component {
     let data = this.todasFrases[this.genRandomNumber(0, length)];
     this.setState({
       frase: data.restaurante,
-      preco: data.preco
+      preco: data.preco,
+      nota: data.nota
     });
   };
 
@@ -35,18 +37,20 @@ class Generator extends Component {
     console.log(length, this.todasFrases);
     this.setState({
       frase: data.restaurante,
-      preco: data.preco
+      preco: data.preco,
+      nota: data.nota
     });
   };
 
   render() {
     return (
       <div className="container">
-        <button onClick={this.changeRestaurant} className="btn">
-          Onde almoçar
+        <button onClick={this.genRestaurant} className="button">
+          Tô co fome
         </button>
-        <p>{this.state.frase}</p>
-        <p>{this.state.preco}</p>
+        <h2>{this.state.frase}</h2>
+        <h5>{'Nota: '+this.state.nota}</h5>
+        <p>{'R$'+this.state.preco}</p>
       </div>
     );
   }

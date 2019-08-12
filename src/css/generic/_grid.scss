@@ -2,6 +2,9 @@
 	max-width: 100%;
 	overflow: hidden;
 	text-align: center;
+	& > * {
+		margin: 4rem 0;
+	}
 }
 
 .row {
