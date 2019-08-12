@@ -54,6 +54,18 @@
 		"tipo": [ "PF", "Executivo" ]
 	},
 	{
+		"restaurante": "Vegetariano - Boca maldita",
+		"preco": "20-30",
+		"nota": "4",
+		"tipo": [ "Buffet", "Vegetariano" ]
+	},
+	{
+		"restaurante": "Greengo",
+		"preco": "30-40",
+		"nota": "4",
+		"tipo": [ "Vegetariano", "A la carte" ]
+	},
+	{
 		"restaurante": "Missal Shawarma",
 		"preco": "15-25",
 		"nota": "5",
@@ -142,5 +154,29 @@
 		"preco": "20-30",
 		"nota": "4",
 		"tipo": [ "PF", "Executivo" ]
+	},
+	{
+		"restaurante": "X Montanha",
+		"preco": "15-25",
+		"nota": "5",
+		"tipo": [ "Hamburger", "Lanches" ]
+	},
+	{
+		"restaurante": "Costelão 1500",
+		"preco": "25-35",
+		"nota": "5",
+		"tipo": [ "Churrasco", "Carnes", "A la carte" ]
+	},
+	{
+		"restaurante": "Café Mafalda",
+		"preco": "25-40",
+		"nota": "5",
+		"tipo": [ "PF", "A la carte", "Buffet" ]
+	},
+	{
+		"restaurante": "Globo",
+		"preco": "10",
+		"nota": "3",
+		"tipo": [ "Buffet", "Barateza" ]
 	}
 ]
