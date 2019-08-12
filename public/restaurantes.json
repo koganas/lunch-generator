@@ -1,6 +1,6 @@
 [
 	{
-		"restaurante": "Libanês",
+		"restaurante": "Libaneza",
 		"preco": "20-30",
 		"nota": "4",
 		"tipo": [ "PF", "Executivo" ]
@@ -36,7 +36,7 @@
 		"tipo": [ "Hamburger", "A la carte" ]
 	},
 	{
-		"restaurante": "Mineiro",
+		"restaurante": "Tempero de Minas",
 		"preco": "25-35",
 		"nota": "4",
 		"tipo": [ "Buffet", "Caseiro" ]
@@ -111,7 +111,7 @@
 		"restaurante": "Nonna Giovanna",
 		"preco": "30-40",
 		"nota": "5",
-		"tipo": [ "Italiana", "A la carte" ]
+		"tipo": [ "Italiana", "A la carte", "Massas" ]
 	},
 	{
 		"restaurante": "Restaurante São Francisco",
@@ -178,5 +178,53 @@
 		"preco": "10",
 		"nota": "3",
 		"tipo": [ "Buffet", "Barateza" ]
+	},
+	{
+		"restaurante": "Buffet Caseiro",
+		"preco": "25-35",
+		"nota": "4",
+		"tipo": [ "Buffet", "Caseiro" ]
+	},
+	{
+		"restaurante": "Come-come",
+		"preco": "15-25",
+		"nota": "4",
+		"tipo": [ "Lanches", "Barateza" ]
+	},
+	{
+		"restaurante": "Bonna - Mercado Municipal",
+		"preco": "25-40",
+		"nota": "4",
+		"tipo": [ "Buffet", "Massas" ]
+	},
+	{
+		"restaurante": "Take - Mercado Municipal",
+		"preco": "35-45",
+		"nota": "5",
+		"tipo": [ "Buffet", "Oriental" ]
+	},
+	{
+		"restaurante": "Mikado",
+		"preco": "20-30",
+		"nota": "4",
+		"tipo": [ "Buffet", "Vegetariano" ]
+	},
+	{
+		"restaurante": "Peixinho",
+		"preco": "35-45",
+		"nota": "5",
+		"tipo": [ "Frutos do mar", "A la carte" ]
+	},
+	{
+		"restaurante": "Comendadoras Grill",
+		"preco": "20-30",
+		"nota": "4",
+		"tipo": [ "Buffet", "Caseira" ]
+	},
+	{
+		"restaurante": "Ponto da Gula (Tiazinha)",
+		"preco": "15-25",
+		"nota": "4",
+		"tipo": [ "Executivo", "PF", "Barateza" ]
 	}
 ]
