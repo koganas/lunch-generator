@@ -1,5 +1,5 @@
 # Curitiba downtown Lunch Generator App
-EBANX - Created by @koganas
+Created by @koganas
 
 ## APP
 Packages:
