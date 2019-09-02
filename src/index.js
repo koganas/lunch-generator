@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './css/index.scss'
-import Generator from './components/generator'
+import Piao from './components/piao'
 
-ReactDOM.render(<Generator />, document.getElementById('root'))
+ReactDOM.render(<Piao />, document.getElementById('root'))

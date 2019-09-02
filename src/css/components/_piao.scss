@@ -1,0 +1,179 @@
+@media all and (max-width: 700px) and (min-width:700px) {
+    /* media querie para diminuir o tamanho do pião para que ele caiba no post do Loop Infinito */
+    #wrapper {
+        -webkit-transform: scale(0.6);
+        -moz-transform: scale(0.6);
+        transform: scale(0.6);
+    }
+
+    /* não mostra o botão de mute quando estiver dentro do post */
+    #mute{
+        top: 10px !important;
+        right: 10px !important;
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+
+
+/* Pião
+---------------------------------------- */
+@-webkit-keyframes rodando {
+    from { -webkit-transform: rotateY(0); }
+    to   { -webkit-transform: rotateY(-360deg); }
+}
+@-moz-keyframes rodando {
+    from { -moz-transform: rotateY(0); }
+    to   { -moz-transform: rotateY(-360deg); }
+}
+@keyframes rodando {
+    from { transform: rotateY(0); }
+    to   { transform: rotateY(-360deg); }
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    width: 400px;
+    height: 400px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+#moldura {
+    height: 400px;
+    width: 400px;
+    border: 50px solid rgb(200, 0, 0);
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transform: translateZ(400px);
+    -moz-transform: translateZ(400px);
+    transform: translateZ(400px);
+    /*
+    1ª shadow: simula 3D no elemento, na parte interna
+    2ª shadow: shadow interna para simular profundidade
+    3ª shadow: simula 3D no elemento, na parte externa
+    4ª shadow: shadow externa para simular profundidade
+    */
+    box-shadow:
+        inset -1px -2px 0px 3px rgb(150, 0, 0),
+        inset -1px -2px 10px 10px rgba(0, 0, 0, 0.5),
+        -2px -2px 0px 3px rgb(150, 0, 0),
+        -4px -4px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#piao {
+    position: relative;
+    top: -15px;
+    margin: 0 auto;
+    height: 330px;
+    width: 200px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: -1;
+    &.rodando {
+        -webkit-animation: rodando 4s infinite linear;
+        -moz-animation: rodando 4s infinite linear;
+        animation: rodando 4s infinite linear;
+    }
+    & .numero {
+        position: absolute;
+        height: 100%;
+        width: 200px;
+        border: 6px solid white;
+        text-align: center;
+        line-height: 320px;
+        font-family: Impact, sans-serif;
+        font-size: 240px;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    & > .numero.um {
+        -webkit-transform: translateZ(170px);
+        -moz-transform: translateZ(170px);
+        transform: translateZ(170px);
+    }
+    & > .numero.dois {
+        -webkit-transform: rotateY(60deg) translateZ(170px);
+        -moz-transform: rotateY(60deg) translateZ(170px);
+        transform: rotateY(60deg) translateZ(170px);
+    }
+    & > .numero.tres {
+        -webkit-transform: rotateY(120deg) translateZ(170px);
+        -moz-transform: rotateY(120deg) translateZ(170px);
+        transform: rotateY(120deg) translateZ(170px);
+    }
+    & > .numero.quatro {
+        -webkit-transform: rotateY(180deg) translateZ(170px);
+        -moz-transform: rotateY(180deg) translateZ(170px);
+        transform: rotateY(180deg) translateZ(170px);
+    }
+    & > .numero.cinco {
+        -webkit-transform: rotateY(240deg) translateZ(170px);
+        -moz-transform: rotateY(240deg) translateZ(170px);
+        transform: rotateY(240deg) translateZ(170px);
+    }
+    & > .numero.seis {
+        -webkit-transform: rotateY(300deg) translateZ(170px);
+        -moz-transform: rotateY(300deg) translateZ(170px);
+        transform: rotateY(300deg) translateZ(170px);
+    }
+
+    &-bg {
+        height: 430px;
+        width: 430px;
+        border-radius: 300px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        background-color: #222;
+        -webkit-transform: translateZ(1px);
+        -moz-transform: translateZ(1px);
+        transform: translateZ(1px);
+    }
+
+}
+
+#mute {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: whiteSmoke;
+    background-image: -webkit-linear-gradient(to top, white, #DDD);
+    background-image: -moz-linear-gradient(to top, white, #DDD);
+    background-image: linear-gradient(to top, white, #DDD);
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 0px 10px;
+    color: #333;
+    font-size: 40px;
+    line-height: 72px;
+    width: 68px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: rgba(255, 255, 255, 0.746094) 0px 1px 1px;
+    padding-left: 2px;
+    -webkit-transition: box-shadow 0.3s linear;
+    -moz-transition: box-shadow 0.3s linear;
+    transition: box-shadow 0.3s linear;
+
+    &:hover {
+        box-shadow: 0 0 0px 6px rgba(0, 0, 0, 0.4);
+    }
+}
