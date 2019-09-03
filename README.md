@@ -10,6 +10,7 @@ Packages:
 
 Other resources
 - `/public/restaurantes.json` contains the complete restaurant list and data
+- `/public/img/` contains the restaurants photos
 - "Pião da casa própria em CSS" adaptation from @caiogondim - https://github.com/caiogondim/piao-da-casa-propria-em-css-3d
 
 ## DEV
