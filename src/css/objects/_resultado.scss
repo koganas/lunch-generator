@@ -1,0 +1,32 @@
+.resultado {
+    position: absolute;
+    background-color: $white;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    
+    background-size: cover;
+    background-position: center;
+
+    &.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    &.show {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    h1, h2, h3, h4, h5, p {
+        background-color: $white;
+        padding: 5px 15px;
+    }
+}

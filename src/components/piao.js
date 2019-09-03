@@ -10,7 +10,10 @@ class Piao extends Component {
       rodando: false,
       frase: 'Onde almoçar?',
       preco: '...',
-      nota: '...'
+      nota: '...',
+      img: '',
+      showResults: '',
+      hideBtn: ''
     };
 
     this.audio = new Audio(PiaoMusic);
@@ -20,23 +23,34 @@ class Piao extends Component {
   /* animation and audio */
   runPiao = () => {
     this.togglePlay()
+    this.showResults()
+  }
+
+  showResults() {
     if(!this.state.rodando) {
+      this.audio.volume = 1
       setTimeout(
         ()=> {
-          this.audio.volume = .4
+          this.audio.volume = .3
           this.audioFim.play()
           this.genRestaurant()
-        }, 10000
+        }, 8000
       )
-    } else {
-      this.audio.volume = 1
     }
   }
+
   togglePlay = () => {
     this.setState({
-      rodando: !this.state.rodando
+      rodando: !this.state.rodando,
+      showResults: '',
+      hideBtn: 'hide'
     },() => {
-      this.state.rodando ? this.audio.play() : this.audio.pause();
+      if(this.state.rodando) {
+        this.audio.play()
+      } else {
+        this.audio.pause()
+        this.audio.currentTime = 0
+      }
     });
   }
 
@@ -52,6 +66,7 @@ class Piao extends Component {
     this.setState({
       frase: data.restaurante,
       preco: data.preco,
+      img: data.img,
       nota: data.nota
     });
   }
@@ -66,8 +81,17 @@ class Piao extends Component {
     this.setState({
       frase: data.restaurante,
       preco: data.preco,
-      nota: data.nota
+      nota: data.nota,
+      img: data.img
     });
+    setTimeout(
+      ()=> {
+        this.setState({
+          showResults: 'show',
+          rodando: false
+        })
+      }, 600
+    )
   }
 
 /*  fadeOut = () => {
@@ -88,9 +112,11 @@ class Piao extends Component {
   render() {
     return (
       <div className="container">
-        <button onClick={this.runPiao} className="button">
+
+        <button onClick={this.runPiao} className={'button ' + this.state.hideBtn}>
           Tô co fome
         </button>
+
         <div id="wrapper">
           <div id="moldura">
             <div id="piao" className={this.state.rodando ? 'rodandoRapido' : ''}>
@@ -102,6 +128,15 @@ class Piao extends Component {
               <div className="numero seis">6</div>
             </div>
           </div>
+        </div>
+
+        <div className={'resultado ' + this.state.showResults} style={{ backgroundImage: 'url('+ this.state.img +')' }} >
+          <h2>{this.state.frase}</h2>
+          <h5>{'Nota: '+this.state.nota}</h5>
+          <p>{'R$'+this.state.preco}</p>
+          <button onClick={this.runPiao} className="button">
+            Não gostei, quero outro lugar
+          </button>
         </div>
       </div>
     );

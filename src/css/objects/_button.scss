@@ -8,5 +8,10 @@
     	background-color: $green;
     }
 
-    margin-bottom: 6rem;
+    margin: 5rem 0;
+
+    &.hide {
+    	opacity: 0;
+    	pointer-events: none;
+    }
 }
