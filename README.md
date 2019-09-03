@@ -1,5 +1,5 @@
-# Curitiba downtown Lunch Generator App
-Created by @koganas
+# Pião do Almoço Próprio | Curitiba downtown lunch generator
+This is an open source project. If you want to contribute or increase our restaurants list, fork this repo and send your PR. Created by @koganas
 
 ## APP
 Packages:
