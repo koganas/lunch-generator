@@ -8,6 +8,11 @@ Packages:
 - Axios - https://github.com/axios/axios
 - Font Awesome - https://fontawesome.com/
 
+Other resources
+- `restaurantes.json` contains the complete restaurant list and data
+- "Pião da casa própria em CSS" adaptation from @caiogondim - https://github.com/caiogondim/piao-da-casa-propria-em-css-3d
+
+## DEV
 ```
 yarn install
 yarn start
