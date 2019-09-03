@@ -25,7 +25,7 @@ class Generator extends Component {
       preco: data.preco,
       nota: data.nota
     });
-  };
+  }
 
   genRestaurant = async () => {
     this.todasFrases = await axios.get('restaurantes.json')
@@ -40,7 +40,7 @@ class Generator extends Component {
       preco: data.preco,
       nota: data.nota
     });
-  };
+  }
 
   render() {
     return (

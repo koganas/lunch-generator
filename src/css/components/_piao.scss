@@ -42,6 +42,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
 
 #wrapper {
@@ -84,11 +85,23 @@
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: -1;
+
+    &.rodandoRapido {
+        -webkit-animation: rodando 3s infinite linear;
+        -moz-animation: rodando 3s infinite linear;
+        animation: rodando 3s infinite linear;
+    }
     &.rodando {
         -webkit-animation: rodando 4s infinite linear;
         -moz-animation: rodando 4s infinite linear;
         animation: rodando 4s infinite linear;
     }
+    &.rodandoLento {
+        -webkit-animation: rodando 5s infinite linear;
+        -moz-animation: rodando 5s infinite linear;
+        animation: rodando 5s infinite linear;
+    }
+
     & .numero {
         position: absolute;
         height: 100%;
