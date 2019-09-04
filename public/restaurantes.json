@@ -11,14 +11,14 @@
 		"preco": "20-30",
 		"nota": "5",
 		"tipo": [ "Buffet", "Caseira" ],
-		"img": "img/setti.png"
+		"img": "img/setti.jpg"
 	},
 	{
 		"restaurante": "Ponto Gira",
 		"preco": "25-35",
 		"nota": "5",
 		"tipo": [ "Buffet", "Churrasco" ],
-		"img": "img/gira.png"
+		"img": "img/gira.jpg"
 	},
 	{
 		"restaurante": "Recanto Gaúcho",
@@ -88,7 +88,7 @@
 		"preco": "50-60",
 		"nota": "5",
 		"tipo": [ "A la carte", "Frutos do mar" ],
-		"img": "img/cocobambu.png"
+		"img": "img/cocobambu.jpg"
 	},
 	{
 		"restaurante": "Le Magu - Vila Urbana",
@@ -144,7 +144,7 @@
 		"preco": "20-30",
 		"nota": "4",
 		"tipo": [ "Hamburger", "Fast food" ],
-		"img": "img/paradoja.png"
+		"img": "img/paradoja.jpg"
 	},
 	{
 		"restaurante": "Matuto - Vila Urbana",
@@ -158,7 +158,7 @@
 		"preco": "25-35",
 		"nota": "4",
 		"tipo": [ "Mexicana", "Fast food" ],
-		"img": "img/zapata.png"
+		"img": "img/zapata.jpg"
 	},
 	{
 		"restaurante": "Jeronimo - Estação",
@@ -235,7 +235,7 @@
 		"preco": "35-45",
 		"nota": "5",
 		"tipo": [ "Buffet", "Oriental" ],
-		"img": "img/take.png"
+		"img": "img/take.jpg"
 	},
 	{
 		"restaurante": "Mikado",
