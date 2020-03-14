@@ -28,13 +28,13 @@ class Piao extends Component {
 
   showResults() {
     if(!this.state.rodando) {
-      this.audio.volume = 1
+      this.audio.volume = .4
       setTimeout(
         ()=> {
-          this.audio.volume = .3
+          this.audio.volume = .2
           this.audioFim.play()
           this.genRestaurant()
-        }, 8000
+        }, 4000
       )
     }
   }
