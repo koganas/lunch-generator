@@ -45,24 +45,41 @@
     flex-flow: column;
 }
 
+$piaoWidth: 400px;
+$piaoWidthMobile: 200px;
+$piaoNumberSize: calc(0.425 * #{$piaoWidth});
+$piaoNumberSizeMobile: calc(0.425 * #{$piaoWidthMobile});
+
 #wrapper {
-    width: 400px;
-    height: 400px;
+    width: $piaoWidth;
+    height: $piaoWidth;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: -1;
+
+    @media(max-width: #{$md}) {
+        width: $piaoWidthMobile;
+        height: $piaoWidthMobile;
+    }
 }
 
 #moldura {
-    height: 400px;
-    width: 400px;
-    border: 50px solid rgb(200, 0, 0);
+    height: $piaoWidth;
+    width: $piaoWidth;
+    border: calc(#{$piaoWidth} / 8) solid rgb(200, 0, 0);
     border-radius: 50%;
     overflow: hidden;
-    -webkit-transform: translateZ(400px);
-    -moz-transform: translateZ(400px);
-    transform: translateZ(400px);
+    -webkit-transform: translateZ($piaoWidth);
+    -moz-transform: translateZ($piaoWidth);
+    transform: translateZ($piaoWidth);
+
+
+    @media(max-width: #{$md}) {
+        width: $piaoWidthMobile;
+        height: $piaoWidthMobile;
+        border: calc(#{$piaoWidthMobile} / 8) solid rgb(200, 0, 0);
+    }
     /*
     1ª shadow: simula 3D no elemento, na parte interna
     2ª shadow: shadow interna para simular profundidade
@@ -80,12 +97,17 @@
     position: relative;
     top: -15px;
     margin: 0 auto;
-    height: 330px;
-    width: 200px;
+    width: calc(#{$piaoWidth} / 2);
+    height: calc(0.825 * #{$piaoWidth});
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: -1;
+
+    @media(max-width: #{$md}) {
+        width: calc(#{$piaoWidthMobile} / 2);
+        height: calc(0.825 * #{$piaoWidthMobile});
+    }
 
     &.rodandoRapido {
         -webkit-animation: rodando 3s infinite linear;
@@ -106,53 +128,95 @@
     & .numero {
         position: absolute;
         height: 100%;
-        width: 200px;
+        width: calc(#{$piaoWidth} / 2);
         border: 6px solid white;
         text-align: center;
-        line-height: 320px;
+        line-height: calc(0.8 * #{$piaoWidth});
         font-family: Impact, sans-serif;
-        font-size: 240px;
+        font-size: calc(0.6 * #{$piaoWidth});
         color: white;
         background-color: rgb(0, 0, 0);
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
+
+        @media(max-width: #{$md}) {
+            width: calc(#{$piaoWidthMobile} / 2);
+            line-height: calc(0.8 * #{$piaoWidthMobile});
+            font-size: calc(0.6 * #{$piaoWidthMobile});
+        }
     }
     & > .numero.um {
-        -webkit-transform: translateZ(170px);
-        -moz-transform: translateZ(170px);
-        transform: translateZ(170px);
+        -webkit-transform: translateZ($piaoNumberSize);
+        -moz-transform: translateZ($piaoNumberSize);
+        transform: translateZ($piaoNumberSize);
+        
+        @media(max-width: #{$md}) {
+             -webkit-transform: translateZ($piaoNumberSizeMobile);
+             -moz-transform: translateZ($piaoNumberSizeMobile);
+             transform: translateZ($piaoNumberSizeMobile);
+        }
     }
     & > .numero.dois {
-        -webkit-transform: rotateY(60deg) translateZ(170px);
-        -moz-transform: rotateY(60deg) translateZ(170px);
-        transform: rotateY(60deg) translateZ(170px);
+        -webkit-transform: rotateY(60deg) translateZ($piaoNumberSize);
+        -moz-transform: rotateY(60deg) translateZ($piaoNumberSize);
+        transform: rotateY(60deg) translateZ($piaoNumberSize);
+        
+        @media(max-width: #{$md}) {
+            -webkit-transform: rotateY(60deg) translateZ($piaoNumberSizeMobile);
+            -moz-transform: rotateY(60deg) translateZ($piaoNumberSizeMobile);
+            transform: rotateY(60deg) translateZ($piaoNumberSizeMobile);
+        }
     }
     & > .numero.tres {
-        -webkit-transform: rotateY(120deg) translateZ(170px);
-        -moz-transform: rotateY(120deg) translateZ(170px);
-        transform: rotateY(120deg) translateZ(170px);
+        -webkit-transform: rotateY(120deg) translateZ($piaoNumberSize);
+        -moz-transform: rotateY(120deg) translateZ($piaoNumberSize);
+        transform: rotateY(120deg) translateZ($piaoNumberSize);
+        
+        @media(max-width: #{$md}) {
+            -webkit-transform: rotateY(120deg) translateZ($piaoNumberSizeMobile);
+            -moz-transform: rotateY(120deg) translateZ($piaoNumberSizeMobile);
+            transform: rotateY(120deg) translateZ($piaoNumberSizeMobile);
+        }
     }
     & > .numero.quatro {
-        -webkit-transform: rotateY(180deg) translateZ(170px);
-        -moz-transform: rotateY(180deg) translateZ(170px);
-        transform: rotateY(180deg) translateZ(170px);
+        -webkit-transform: rotateY(180deg) translateZ($piaoNumberSize);
+        -moz-transform: rotateY(180deg) translateZ($piaoNumberSize);
+        transform: rotateY(180deg) translateZ($piaoNumberSize);
+        
+        @media(max-width: #{$md}) {
+            -webkit-transform: rotateY(180deg) translateZ($piaoNumberSizeMobile);
+            -moz-transform: rotateY(180deg) translateZ($piaoNumberSizeMobile);
+            transform: rotateY(180deg) translateZ($piaoNumberSizeMobile);
+        }
     }
     & > .numero.cinco {
-        -webkit-transform: rotateY(240deg) translateZ(170px);
-        -moz-transform: rotateY(240deg) translateZ(170px);
-        transform: rotateY(240deg) translateZ(170px);
+        -webkit-transform: rotateY(240deg) translateZ($piaoNumberSize);
+        -moz-transform: rotateY(240deg) translateZ($piaoNumberSize);
+        transform: rotateY(240deg) translateZ($piaoNumberSize);
+        
+        @media(max-width: #{$md}) {
+            -webkit-transform: rotateY(240deg) translateZ($piaoNumberSizeMobile);
+            -moz-transform: rotateY(240deg) translateZ($piaoNumberSizeMobile);
+            transform: rotateY(240deg) translateZ($piaoNumberSizeMobile);
+        }
     }
     & > .numero.seis {
-        -webkit-transform: rotateY(300deg) translateZ(170px);
-        -moz-transform: rotateY(300deg) translateZ(170px);
-        transform: rotateY(300deg) translateZ(170px);
+        -webkit-transform: rotateY(300deg) translateZ($piaoNumberSize);
+        -moz-transform: rotateY(300deg) translateZ($piaoNumberSize);
+        transform: rotateY(300deg) translateZ($piaoNumberSize);
+
+        @media(max-width: #{$md}) {
+            -webkit-transform: rotateY(300deg) translateZ($piaoNumberSizeMobile);
+            -moz-transform: rotateY(300deg) translateZ($piaoNumberSizeMobile);
+            transform: rotateY(300deg) translateZ($piaoNumberSizeMobile); 
+        }
     }
 
     &-bg {
-        height: 430px;
-        width: 430px;
-        border-radius: 300px;
+        height: calc(1.075 * #{$piaoWidth});
+        width: calc(1.075 * #{$piaoWidth});
+        border-radius: calc(0.75 * #{$piaoWidth});
         position: absolute;
         top: -10px;
         left: -10px;
@@ -160,6 +224,12 @@
         -webkit-transform: translateZ(1px);
         -moz-transform: translateZ(1px);
         transform: translateZ(1px);
+
+        @media(max-width: #{$md}) {
+            height: calc(1.075 * #{$piaoWidthMobile});
+            width: calc(1.075 * #{$piaoWidthMobile});
+            border-radius: calc(0.75 * #{$piaoWidthMobile});
+        }
     }
 
 }

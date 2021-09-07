@@ -112,12 +112,20 @@ class Piao extends Component {
   render() {
     return (
       <div className="container">
+        <div className={'resultado ' + this.state.showResults} style={{ backgroundImage: 'url(' + this.state.img + ')' }} >
+          <h2>{this.state.frase}</h2>
+          <h5>{'Nota: ' + this.state.nota}</h5>
+          <p>{'R$' + this.state.preco}</p>
+          <button onClick={this.runPiao} className="button">
+            Não gostei, quero outro lugar
+          </button>
+        </div>
 
         <button onClick={this.runPiao} className={'button ' + this.state.hideBtn}>
           Tô co fome
         </button>
 
-        <div id="wrapper">
+        <div id="wrapper" className={(this.state.hideBtn !== '' && !this.state.rodando) ? 'hide' : ''}>
           <div id="moldura">
             <div id="piao" className={this.state.rodando ? 'rodandoRapido' : ''}>
               <div className="numero um">1</div>
@@ -130,14 +138,9 @@ class Piao extends Component {
           </div>
         </div>
 
-        <div className={'resultado ' + this.state.showResults} style={{ backgroundImage: 'url('+ this.state.img +')' }} >
-          <h2>{this.state.frase}</h2>
-          <h5>{'Nota: '+this.state.nota}</h5>
-          <p>{'R$'+this.state.preco}</p>
-          <button onClick={this.runPiao} className="button">
-            Não gostei, quero outro lugar
-          </button>
-        </div>
+        <div className="footer">
+          Feito com fome por <a href="https://github.com/koganas/lunch-generator" target="_blank" rel="noopener noreferrer">@koganas</a>
+        </div>        
       </div>
     );
   }

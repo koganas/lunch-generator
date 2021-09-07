@@ -56,3 +56,8 @@ fieldset{ border: none; }
 input, select, textarea{
     &:focus{ outline: none; }
 }
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}

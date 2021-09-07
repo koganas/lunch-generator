@@ -2,7 +2,7 @@
 	{
 		"restaurante": "Libaneza",
 		"preco": [  20, 30  ],
-		"nota": "4",
+		"nota": "5",
 		"tipo": [ "PF", "Executivo" ],
 		"img": "img/libaneza.jpg"
 	},
@@ -16,7 +16,7 @@
 	{
 		"restaurante": "Ponto Gira",
 		"preco": [  25, 35  ],
-		"nota": "5",
+		"nota": "4",
 		"tipo": [ "Buffet", "Churrasco" ],
 		"img": "img/gira.jpg"
 	},
@@ -144,7 +144,7 @@
 		"preco": [ 30, 40 ],
 		"nota": "5",
 		"tipo": [ "Italiana", "A la carte", "Massas" ],
-		"img": "img/nonna.jpg"
+		"img": "img/nonna.png"
 	},
 	{
 		"restaurante": "Restaurante São Francisco",
@@ -217,13 +217,6 @@
 		"img": "img/globo.jpg"
 	},
 	{
-		"restaurante": "Buffet Caseiro",
-		"preco": [ 25, 35 ],
-		"nota": "4",
-		"tipo": [ "Buffet", "Caseiro" ],
-		"img": "img/libaneza.jpg"
-	},
-	{
 		"restaurante": "Come-come",
 		"preco": [ 15, 25 ],
 		"nota": "4",
@@ -259,17 +252,101 @@
 		"img": "img/peixinho.jpg"
 	},
 	{
-		"restaurante": "Comendadoras Grill",
-		"preco": [ 20, 30 ],
-		"nota": "4",
-		"tipo": [ "Buffet", "Caseira" ],
-		"img": "img/libaneza.jpg"
+		"restaurante": "Bar Palacio",
+		"preco": [ 60, 100 ],
+		"nota": "5",
+		"tipo": [ "Churrasco", "A la carte" ],
+		"img": "img/palacio.png"
 	},
 	{
 		"restaurante": "Ponto da Gula (Tiazinha)",
 		"preco": [ 15, 25 ],
-		"nota": "4",
+		"nota": "3",
 		"tipo": [ "Executivo", "PF", "Barateza" ],
-		"img": "img/libaneza.jpg"
+		"img": "img/ponto-da-gula.jpg"
+	},
+	{
+		"restaurante": "Falaf",
+		"preco": [ 20, 30 ],
+		"nota": "5",
+		"tipo": [ "Árabe", "Falafel" ],
+		"img": "img/falaf.jpg"
+	},
+	{
+		"restaurante": "Barbaran",
+		"preco": [ 20, 30 ],
+		"nota": "5",
+		"tipo": [ "Boteco" ],
+		"img": "img/barbaran.png"
+	},
+	{
+		"restaurante": "Senhora Chung",
+		"preco": [ 20, 30 ],
+		"nota": "4",
+		"tipo": [ "Oriental" ],
+		"img": "img/chung.png"
+	},
+	{
+		"restaurante": "Gato Preto",
+		"preco": [ 40, 60 ],
+		"nota": "4",
+		"tipo": [ "Churrasco" ],
+		"img": "img/gato-preto.png"
+	},
+	{
+		"restaurante": "Kibe da Boca",
+		"preco": [ 10, 30 ],
+		"nota": "5",
+		"tipo": [ "Árabe" ],
+		"img": "img/kibe-boca.png"
+	},
+	{
+		"restaurante": "Mahatma Gourmet",
+		"preco": [ 30, 40 ],
+		"nota": "5",
+		"tipo": [ "Vegetariano" ],
+		"img": "img/mahatma.png"
+	},
+	{
+		"restaurante": "Oidê",
+		"preco": [ 30, 40 ],
+		"nota": "5",
+		"tipo": [ "Oriental" ],
+		"img": "img/oide.png"
+	},
+	{
+		"restaurante": "Armazém California",
+		"preco": [ 30, 40 ],
+		"nota": "5",
+		"tipo": [ "Árabe" ],
+		"img": "img/california.png"
+	},
+	{
+		"restaurante": "Baba Salim",
+		"preco": [ 30, 40 ],
+		"nota": "5",
+		"tipo": [ "Árabe" ],
+		"img": "img/baba-salim.png"
+	},
+	{
+		"restaurante": "2 Corações",
+		"preco": [ 10, 20 ],
+		"nota": "5",
+		"tipo": [ "Salgados" ],
+		"img": "img/2coracoes.png"
+	},
+	{
+		"restaurante": "Castanheiro Dog",
+		"preco": [ 10, 30 ],
+		"nota": "5",
+		"tipo": [ "Cachorro quente" ],
+		"img": "img/castanheiro.jpg"
+	},
+	{
+		"restaurante": "Gringo Dog",
+		"preco": [ 10, 30 ],
+		"nota": "5",
+		"tipo": [ "Cachorro quente" ],
+		"img": "img/gringo-dog.png"
 	}
 ]

@@ -4,14 +4,11 @@
     border: 1px solid $blackLight;
     padding: 10px 30px;
     font-weight: bold;;
+    cursor: pointer;
+
     &:hover {
     	background-color: $green;
     }
 
     margin: 5rem 0;
-
-    &.hide {
-    	opacity: 0;
-    	pointer-events: none;
-    }
 }
