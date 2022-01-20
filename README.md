@@ -1,6 +1,10 @@
 # Pião do Almoço Próprio
 ## Curitiba downtown lunch generator
-This is an open source project. If you want to contribute or increase our restaurants list, fork this repo and send your PR. Created by @koganas
+This is an open source project. If you want to contribute or increase our restaurants list, fork this repo and send your PR.  
+Created by [@koganas](https://github.com/koganas) :sparkles:
+
+Available at [ondecomercwb.com](https://ondecomercwb.com/) :globe_with_meridians:
+
 
 ### Resources
 - Create React App - https://github.com/facebook/create-react-app
