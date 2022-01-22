@@ -21,5 +21,5 @@ yarn start
 ```
 Server will run at localhost:3000
 
-## Author
+### Author
 Created by [@koganas](https://github.com/koganas)
