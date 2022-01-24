@@ -8,6 +8,10 @@
     font-family: $rubik;
     cursor: pointer;
 
+    @media(max-width: #{$md}) {
+        font-size: 1.5rem;
+    }
+
     &:hover {
     	background-color: $green;
         box-shadow: 10px 10px $green;
