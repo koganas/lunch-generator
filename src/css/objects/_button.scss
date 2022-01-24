@@ -1,13 +1,22 @@
 .button {
     text-transform: uppercase;
     border-radius: $borderRadius;
-    border: 1px solid $blackLight;
+    border: 4px solid $blackLight;
     padding: 10px 30px;
-    font-weight: bold;;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: $rubik;
     cursor: pointer;
 
     &:hover {
     	background-color: $green;
+        box-shadow: 10px 10px $green;
+        transform: translate(-5px, -5px);
+    }
+
+    &:active {
+        box-shadow: 4px 4px $greenDark;
+        transform: translate(0, 0);
     }
 
     margin: 5rem 0;
