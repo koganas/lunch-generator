@@ -8,6 +8,7 @@ class Piao extends Component {
     super(props);
     this.state = {
       rodando: false,
+      acabou: false,
       frase: 'Onde almoçar?',
       preco: '...',
       nota: '...',
@@ -34,7 +35,7 @@ class Piao extends Component {
           this.audio.volume = .2
           this.audioFim.play()
           this.genRestaurant()
-        }, 4000
+        }, 3500
       )
     }
   }
@@ -60,6 +61,7 @@ class Piao extends Component {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
   }
+
   changeRestaurant = event => {
     const length = this.allRestaurants.length;
     let data = this.allRestaurants[this.genRandomNumber(0, length)];
@@ -70,44 +72,42 @@ class Piao extends Component {
       nota: data.nota
     });
   }
+
   genRestaurant = async () => {
-    this.allRestaurants = await axios.get('restaurantes.json')
-      .then( res => {
-        return res.data.map(frases => frases);
-      });
+    if(!this.allRestaurants) {
+      this.allRestaurants = await axios.get('restaurantes.json')
+        .then( res => {
+          return res.data.map(restaurante => restaurante);
+        });
+    }
+
     const length = this.allRestaurants.length;
     let data = this.allRestaurants[this.genRandomNumber(0, length)];
-    console.log(data.restaurante);
-    this.setState({
-      frase: data.restaurante,
-      preco: data.preco,
-      nota: data.nota,
-      img: data.img,
-      showResults: 'show'
-    });
-    setTimeout(
-      ()=> {
-        this.setState({
-          rodando: false
-        })
-      }, 1000
-    )
-  }
 
-/*  fadeOut = () => {
-    let vol = 0.20,
-        interval = 200; 
-    setInterval(
-    function() {
-      if (vol > 0) {
-        vol -= 0.05;
-        this.audio.volume = vol;
-      }
-      else {
-        clearInterval(this.fadeOut);
-      }
-    }, interval);
-  }*/
+    if(data) {
+      this.allRestaurants = this.allRestaurants.filter(restaurante => restaurante.restaurante !== data.restaurante);
+
+      this.setState({
+        frase: data.restaurante,
+        preco: data.preco,
+        nota: data.nota,
+        img: data.img
+      });
+
+      setTimeout(
+        () => {
+          this.setState({ showResults: 'show' })
+          setTimeout(
+            () => {
+              this.setState({ rodando: false })
+            }, 150
+          )
+        }, 250
+      )
+    } else {
+      this.setState({ acabou: true })
+    }
+  }
 
   render() {
     return (
@@ -121,9 +121,16 @@ class Piao extends Component {
           </button>
         </div>
 
-        <button onClick={this.runPiao} className={'button ' + this.state.hideBtn}>
-          Tô co fome
-        </button>
+        { this.state.acabou ? (
+          <a href="https://twitter.com/koganas" className="button" target="_blank" rel="noopener noreferrer">
+            Não encontrou o que gosta? :(<br />
+            Recomende outros lugares.
+          </a>
+        ) : (
+          <button onClick = {this.runPiao} className={'button ' + this.state.hideBtn}>
+            Tô co fome
+          </button>
+        )}
 
         <div id="wrapper" className={(this.state.hideBtn !== '' && !this.state.rodando) ? 'hide' : ''}>
           <div id="moldura">
@@ -140,7 +147,7 @@ class Piao extends Component {
 
         <div className="footer">
           Feito com fome por <a href="https://github.com/koganas/lunch-generator" target="_blank" rel="noopener noreferrer">@koganas</a>
-        </div>        
+        </div>
       </div>
     );
   }
