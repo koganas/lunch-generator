@@ -119,11 +119,11 @@
 		"img": "img/maneki.jpg"
 	},
 	{
-		"restaurante": "Origami",
-		"preco": [ 20, 30 ],
-		"nota": "3",
+		"restaurante": "Gami Gami Sushi",
+		"preco": [ 25, 35 ],
+		"nota": "3.5",
 		"tipo": [ "Buffet", "Oriental" ],
-		"img": "img/origami.jpg"
+		"img": "img/gamigami.jpg"
 	},
 	{
 		"restaurante": "Maru",
