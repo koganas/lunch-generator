@@ -150,6 +150,7 @@ $piaoNumberSizeMobile: calc(0.425 * #{$piaoWidthMobile});
         -webkit-transform: translateZ($piaoNumberSize);
         -moz-transform: translateZ($piaoNumberSize);
         transform: translateZ($piaoNumberSize);
+        z-index: 1;
         
         @media(max-width: #{$md}) {
              -webkit-transform: translateZ($piaoNumberSizeMobile);
@@ -161,7 +162,7 @@ $piaoNumberSizeMobile: calc(0.425 * #{$piaoWidthMobile});
         -webkit-transform: rotateY(60deg) translateZ($piaoNumberSize);
         -moz-transform: rotateY(60deg) translateZ($piaoNumberSize);
         transform: rotateY(60deg) translateZ($piaoNumberSize);
-        
+        z-index: 1;
         @media(max-width: #{$md}) {
             -webkit-transform: rotateY(60deg) translateZ($piaoNumberSizeMobile);
             -moz-transform: rotateY(60deg) translateZ($piaoNumberSizeMobile);

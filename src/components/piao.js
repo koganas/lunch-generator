@@ -61,8 +61,8 @@ class Piao extends Component {
     return Math.floor(Math.random() * (max - min)) + min;
   }
   changeRestaurant = event => {
-    const length = this.todasFrases.length;
-    let data = this.todasFrases[this.genRandomNumber(0, length)];
+    const length = this.allRestaurants.length;
+    let data = this.allRestaurants[this.genRandomNumber(0, length)];
     this.setState({
       frase: data.restaurante,
       preco: data.preco,
@@ -71,26 +71,26 @@ class Piao extends Component {
     });
   }
   genRestaurant = async () => {
-    this.todasFrases = await axios.get('restaurantes.json')
+    this.allRestaurants = await axios.get('restaurantes.json')
       .then( res => {
         return res.data.map(frases => frases);
       });
-    const length = this.todasFrases.length;
-    let data = this.todasFrases[this.genRandomNumber(0, length)];
+    const length = this.allRestaurants.length;
+    let data = this.allRestaurants[this.genRandomNumber(0, length)];
     console.log(data.restaurante);
     this.setState({
       frase: data.restaurante,
       preco: data.preco,
       nota: data.nota,
-      img: data.img
+      img: data.img,
+      showResults: 'show'
     });
     setTimeout(
       ()=> {
         this.setState({
-          showResults: 'show',
           rodando: false
         })
-      }, 600
+      }, 1000
     )
   }
 
@@ -114,7 +114,7 @@ class Piao extends Component {
       <div className="container">
         <div className={'resultado ' + this.state.showResults} style={{ backgroundImage: 'url(' + this.state.img + ')' }} >
           <h2>{this.state.frase}</h2>
-          <h5>{'Nota: ' + this.state.nota}</h5>
+          <h5>{'Nota: ' + this.state.nota+'/5'}</h5>
           <p>{'R$' + this.state.preco}</p>
           <button onClick={this.runPiao} className="button">
             Não gostei, quero outro lugar

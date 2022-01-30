@@ -18,8 +18,8 @@ class Generator extends Component {
   }
 
   changeRestaurant = event => {
-    const length = this.todasFrases.length;
-    let data = this.todasFrases[this.genRandomNumber(0, length)];
+    const length = this.allRestaurants.length;
+    let data = this.allRestaurants[this.genRandomNumber(0, length)];
     this.setState({
       frase: data.restaurante,
       preco: data.preco,
@@ -28,13 +28,13 @@ class Generator extends Component {
   }
 
   genRestaurant = async () => {
-    this.todasFrases = await axios.get('restaurantes.json')
+    this.allRestaurants = await axios.get('restaurantes.json')
       .then( res => {
         return res.data.map(frases => frases);
       });
-    const length = this.todasFrases.length;
-    let data = this.todasFrases[this.genRandomNumber(0, length)];
-    console.log(length, this.todasFrases);
+    const length = this.allRestaurants.length;
+    let data = this.allRestaurants[this.genRandomNumber(0, length)];
+
     this.setState({
       frase: data.restaurante,
       preco: data.preco,
