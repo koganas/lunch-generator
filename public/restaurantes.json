@@ -21,18 +21,11 @@
 		"img": "img/gira.jpg"
 	},
 	{
-		"restaurante": "Oidē",
-		"preco": [  30, 45  ],
-		"nota": "5",
-		"tipo": [ "Oriental", "Karê" ],
-		"img": "img/oide.jpeg"
-	},
-	{
 		"restaurante": "Expresso Curitiba Hostel",
 		"preco": [  20, 40  ],
 		"nota": "5",
 		"tipo": [ "PF", "Executivo" ],
-		"img": "img/expresso-hostel.jpeg"
+		"img": "img/expresso-hostel.jpg"
 	},
 	{
 		"restaurante": "Recanto Gaúcho",
@@ -309,7 +302,7 @@
 	},
 	{
 		"restaurante": "Oidê",
-		"preco": [ 30, 40 ],
+		"preco": [ 30, 45 ],
 		"nota": "5",
 		"tipo": [ "Oriental" ],
 		"img": "img/oide.png"
