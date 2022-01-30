@@ -115,7 +115,8 @@ class Piao extends Component {
         <div className={'resultado ' + this.state.showResults} style={{ backgroundImage: 'url(' + this.state.img + ')' }} >
           <h2>{this.state.frase}</h2>
           <h5>{'Nota: ' + this.state.nota+'/5'}</h5>
-          <p>{'R$' + this.state.preco}</p>
+
+          <p>{'R$' + this.state.preco[0] + ' - R$' + this.state.preco[1]}</p>
           <button onClick={this.runPiao} className="button">
             Não gostei, quero outro lugar
           </button>
