@@ -348,5 +348,26 @@
 		"nota": "5",
 		"tipo": [ "Cachorro quente" ],
 		"img": "img/gringo-dog.png"
+	},
+	{
+		"restaurante": "Italy Caffe",
+		"preco": [ 10, 30 ],
+		"nota": "5",
+		"tipo": [ "Massas" ],
+		"img": "img/italy-caffe.jpg"
+	},
+	{
+		"restaurante": "Cidadão do Mundo",
+		"preco": [ 20, 40 ],
+		"nota": "4.5",
+		"tipo": [ "Hamburger", "PF" ],
+		"img": "img/cidadao-do-mundo.jpg"
+	},
+	{
+		"restaurante": "A Pamphylia",
+		"preco": [ 40, 60 ],
+		"nota": "4",
+		"tipo": [ "A la carte", "Sopas" ],
+		"img": "img/pamphylia.jpg"
 	}
 ]
