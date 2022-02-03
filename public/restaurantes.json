@@ -204,7 +204,7 @@
 	},
 	{
 		"restaurante": "Globo",
-		"preco": [ 10 ],
+		"preco": [ 10, 15 ],
 		"nota": "3",
 		"tipo": [ "Buffet", "Barateza" ],
 		"img": "img/globo.jpg"
